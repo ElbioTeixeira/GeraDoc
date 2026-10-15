@@ -11,7 +11,7 @@ O GeraDoc é um utilitário de automação desenvolvido em Python com interface 
 - Máscaras de Formatação: Formatação automática de CPFs, CNPJs, telefones e valores monetários baseada em tags.
 
 ## Estrutura do Repositório
-
+```text
 GeraDoc/
 ├── .gitignore
 ├── README.md
@@ -20,7 +20,7 @@ GeraDoc/
 └── docs/
     ├── manual.pdf
     └── modelo-exemplo.docx
-
+```
 ## Pré-requisitos
 
 - Python 3.8 ou superior instalado.
@@ -29,31 +29,37 @@ GeraDoc/
 ## Instalação e Execução
 
 1. Clone o repositório ou baixe os arquivos:
+```bash
 git clone https://github.com/ElbioTeixeira/GeraDoc.git
 cd GeraDoc
+```
 
-2. Instale as dependências necessárias:
+3. Instale as dependências necessárias:
+```bash
 pip install -r requirements.txt
-
-3. Execute o programa:
+```
+4. Execute o programa:
+```bash
 python GeraDoc.py
-
+```
 ## Compilação do Executável (PyInstaller)
 
 Caso queira gerar o seu próprio arquivo executável (.exe) a partir do código-fonte:
 
 1. Instale o PyInstaller:
+```bash
 pip install pyinstaller
-
+```
 2. Compile o script em modo de arquivo único (onefile) e com interface oculta de console (noconsole):
+```bash
 pyinstaller --noconsole --onefile GeraDoc.py
-
+```
 O executável final será gerado dentro da pasta "dist/".
 
 ## Documentação e Exemplos
 
-- Manual de Utilização: Instruções detalhadas de formatação de tags e uso da interface estão disponíveis em docs/manual.pdf.
-- Modelo de Exemplo: Utilize o arquivo docs/modelo-exemplo.docx como base para estruturar as suas tags de substituição.
+- Manual de Utilização: Instruções detalhadas de formatação de tags e uso da interface estão disponíveis em [docs/manual.pdf](docs/manual.pdf).
+- Modelo de Exemplo: Utilize o arquivo [docs/modelo-exemplo.docx](docs/modelo-exemplo.docx) como base para estruturar as suas tags de substituição.
 
 ## Licença
 
